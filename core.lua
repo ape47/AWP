@@ -67,7 +67,7 @@
       local AWP = CreateFrame('Frame', '!AWP')
             AWP:SetFrameStrata('DIALOG')
             AWP:SetFrameLevel(15)
-            AWP:SetScale(768/tonumber(strmatch(GetCVar('gxResolution'), '%d+x(%d+)')))
+            AWP:SetScale(max(768/tonumber(strmatch(GetCVar('gxResolution'), '%d+x(%d+)')), .64))
             AWP:SetSize(340, 210)
             AWP:SetMinResize(340, 210)
             AWP:SetMaxResize(1920, 1200)
